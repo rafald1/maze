@@ -22,11 +22,10 @@ G - Generate a new maze.
 ### Generating a maze
 Generates a maze using randomized Depth First Search algorithm.
 Number of columns and rows, and the size of a block can be set in game.py:
-
+```
 GRID_COLUMNS, GRID_ROWS = 30, 20
-
 BLOCK_SIZE = 40
-
+```
 #### Process of generating a maze
 1. Look for not visited neighbours of the current block.
 2. Randomly choose a neighbour from the available ones if possible.
@@ -65,8 +64,6 @@ Only the shortest path is shown.
 
 A cleaned up maze.
 ![A clean maze](preview/maze_generation_5.png)
-
-
 
 ### Solving a maze
 A maze can be solved using one of three algorithms.
@@ -133,3 +130,33 @@ The maze was solved by BFS in 1265 steps.
 
 ![A solved maze with A* algorithm](preview/maze_solving_a_star.png)
 The maze was solved by A* in 937 steps.
+
+### Installation
+
+1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/rafald1/maze.git
+    cd maze
+    ```
+2. **Create a Virtual Environment:**
+    ```bash
+    python -m venv .venv
+    ```
+3. **Activate the Virtual Enviroment:**
+
+    On Windows
+    ```bash
+    .\.venv\Scripts\activate
+    ```    
+    On macOS/Linux
+    ```bash
+    source .venv/bin/activate
+    ```    
+4. **Install Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+5. **Run the Application:**
+    ```bash
+    python main.py
+    ```
